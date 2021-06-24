@@ -1,6 +1,7 @@
 name: workflow_dispatch
 on: [push, workflow_dispatch]
 jobs:
+  runs-on: ubuntu-latest
   workflow_dispatch-test:
     steps:
       - run: echo 'This is foo.yaml from main'

@@ -1,0 +1,7 @@
+name: workflow_dispatch
+on: workflow_dispatch
+jobs:
+  workflow_dispatch-test:
+    steps:
+      - run: echo 'This is foo.yaml from main'
+      - run: echo $GITHUB_REF

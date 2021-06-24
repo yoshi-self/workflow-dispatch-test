@@ -1,8 +1,8 @@
 name: workflow_dispatch
-on: [push, workflow_dispatch]
+on: workflow_dispatch
 jobs:
   workflow_dispatch-test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'This is foo.yaml from main'
+      - run: echo 'This is foo.yaml from feature-a'
       - run: echo $GITHUB_REF
